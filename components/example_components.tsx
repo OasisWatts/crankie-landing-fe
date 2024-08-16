@@ -1,7 +1,7 @@
 export function ExampleComponent() {
     return (
         <div className="inline-block text-center p-5 w-[50rem] h-[25rem] bg-gray-500">
-            <p>react components example</p>
+            <p>react components example 1</p>
             <ExampleSubComponent value={1} />
             <ExampleSubComponent value={2} />
         </div>
