@@ -2,7 +2,6 @@ import Script from 'next/script'
 import './css/style.css'
 
 import { Nunito, Rubik } from 'next/font/google'
-import Footer from '@/components/ui/footer'
 
 const nunito = Nunito({
   subsets: ['latin'],

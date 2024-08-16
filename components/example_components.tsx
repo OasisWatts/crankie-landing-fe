@@ -1,5 +1,4 @@
 export function ExampleComponent() {
-
     return (
         <div className="inline-block text-center p-5 w-[50rem] h-[25rem] bg-red-500">
             <p>component</p>
