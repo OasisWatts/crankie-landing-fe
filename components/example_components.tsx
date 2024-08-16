@@ -1,6 +1,6 @@
 export function ExampleComponent() {
     return (
-        <div className="inline-block text-center p-5 w-[50rem] h-[25rem] bg-red-500">
+        <div className="inline-block text-center p-5 w-[50rem] h-[25rem] bg-gray-500">
             <p>component</p>
             <ExampleSubComponent value={1} />
             <ExampleSubComponent value={2} />
@@ -10,7 +10,7 @@ export function ExampleComponent() {
 
 export function ExampleSubComponent({ value }: { value: number }) {
     return (
-        <div className="inline-block m-5 p-5 w-[20rem] h-[20rem] bg-yellow-500">
+        <div className="inline-block m-5 p-5 w-[20rem] h-[20rem] bg-gray-300">
             subComponent {value}
         </div>
     )
