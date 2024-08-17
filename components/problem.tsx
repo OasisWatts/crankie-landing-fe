@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+// Hello
+
 export default function Problem({ data }: { data: { title1: string, title2: string, paragraph1: string, paragraph2: string } }) {
     return (
         <div className="text-center inline-block w-full py-[160px]">
@@ -11,5 +13,3 @@ export default function Problem({ data }: { data: { title1: string, title2: stri
         </div>
     )
 }
-
-<></>
