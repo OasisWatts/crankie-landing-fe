@@ -28,7 +28,7 @@ export default function Preparation({ data }: { data: any }) {
                             </div>
                         </div>
                         {/* 우 */}
-                        <div className="right">
+                        <div className="right flex flex-col justify-start items-start">
                             <h1 className="text-3xl font-extrabold">{data.explanation1}</h1>
                             <h1 className="text-lg font-extrabold">{data.explanation1_1}</h1>
                         </div>
@@ -39,7 +39,7 @@ export default function Preparation({ data }: { data: any }) {
                                 이미지
                             </div>
                         </div>
-                        <div className="right">
+                        <div className="right flex flex-col justify-start items-start">
                             <h1 className="text-3xl font-extrabold">{data.explanation2}</h1>
                             <h1 className="text-lg font-extrabold">{data.explanation2_1}</h1>
                         </div>
@@ -50,7 +50,7 @@ export default function Preparation({ data }: { data: any }) {
                                 이미지
                             </div>
                         </div>
-                        <div className="right">
+                        <div className="right flex flex-col justify-start items-start">
                             <h1 className="text-3xl font-extrabold">{data.explanation3}</h1>
                             <h1 className="text-3xl font-extrabold">{data.explanation3_0}</h1>
                             <h1 className="text-lg font-extrabold">{data.explanation3_1}</h1>
