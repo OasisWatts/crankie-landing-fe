@@ -11,3 +11,5 @@ export default function Problem({ data }: { data: { title1: string, title2: stri
         </div>
     )
 }
+
+<></>
