@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Solution({ data }: { data: {title1:string, title2:string, explanation1:string, explanation2 :string} }) {
 
     return (
-        <div className="bg-[#2A2829] w-[1920px] h-[1080px] py-[100px] flex flex-row">
+        <div className="bg-[#2A2829] w-full h-[1080px] py-[100px] flex flex-row">
             <div className="flex-col flex items-center justify-center">
                 <div className="ml-[200px] text-left text-white">
                     <h1 className="text-2xl font-extrabold">{data.title1}</h1>
