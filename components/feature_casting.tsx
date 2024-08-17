@@ -6,6 +6,7 @@ export default function FeatureCasting({ data }: { data: any }) {
                     {data.title}
                 </p>
             </div>
+            {/* Block 1*/}
             <div className="mt-[250px] flex justify-center">
                 <div className="w-[400px] h-[400px] rounded bg-gray-700">GIF</div>
                 <div className="pl-[100px] h-[400px] flex flex-col justify-center">
@@ -20,6 +21,7 @@ export default function FeatureCasting({ data }: { data: any }) {
                     </p>
                 </div>
             </div>
+            {/*Block 2*/}
             <div className="mt-[100px] flex justify-center">
                 <div className="pr-[100px] h-[400px] flex flex-col justify-center">
                     <p className="text-xl font-bold">
