@@ -1,4 +1,3 @@
-import { ExampleComponent } from "@/components/example_components";
 import FeatureCasting from "@/components/feature_casting";
 import FeatureTeamSpace from "@/components/feature_teamspace";
 import Front from "@/components/front";
@@ -26,7 +25,6 @@ export default function Home() {
       <Preparation data={jsonData.Preparation} />
       <ClientService data={jsonData.ClientService} />
       <Waitlist data={jsonData.Waitlist} />
-      <ExampleComponent />
     </div>
   )
 }
