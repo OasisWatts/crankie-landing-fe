@@ -7,6 +7,7 @@ import Problem from "@/components/problem";
 import Solution from "@/components/solution";
 import Waitlist from "@/components/wailitst";
 import jsonData from "@/app/data/data.json";
+import ClientService from "@/components/client_service";
 
 export const metadata = {
   title: 'title',
@@ -23,6 +24,7 @@ export default function Home() {
       <FeatureCasting data={jsonData.FeatureCasting} />
       <FeatureTeamSpace data={jsonData.FeatureTeamSpace} />
       <Preparation data={jsonData.Preparation} />
+      <ClientService data={jsonData.ClientService} />
       <Waitlist data={jsonData.Waitlist} />
       <ExampleComponent />
     </div>
