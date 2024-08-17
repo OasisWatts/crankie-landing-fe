@@ -7,7 +7,7 @@ export default function FeatureCasting({ data }: { data: any }) {
                 </p>
             </div>
             <div>
-                <div></div>
+                <div>hello</div>
                 <div>
                     <p>
                         {data.feature1_1}
