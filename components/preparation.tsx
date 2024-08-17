@@ -8,7 +8,7 @@ export default function Preparation({ data }: { data: any }) {
                 <div className="w-[90px] h-[90px] bg-gray-300 border border-gray-400 flex items-center justify-center">
                     이미지
                 </div>
-                <h1 className="text-5xl font-extrabold mt-10">{data.title}</h1>
+                <h1 className="text-3xl font-extrabold mt-10">{data.title}</h1>
             </div>
             {/* 하단 */}
             <div className="bottom flex flex-row justify-center">
@@ -29,8 +29,8 @@ export default function Preparation({ data }: { data: any }) {
                         </div>
                         {/* 우 */}
                         <div className="right">
-                            <h1 className="text-4xl font-extrabold">{data.explanation1}</h1>
-                            <h1 className="text-xl font-extrabold">{data.explanation1_1}</h1>
+                            <h1 className="text-3xl font-extrabold">{data.explanation1}</h1>
+                            <h1 className="text-lg font-extrabold">{data.explanation1_1}</h1>
                         </div>
                     </div>
                     <div className="exp2 flex flex-row mb-40">
@@ -40,8 +40,8 @@ export default function Preparation({ data }: { data: any }) {
                             </div>
                         </div>
                         <div className="right">
-                            <h1 className="text-4xl font-extrabold">{data.explanation2}</h1>
-                            <h1 className="text-xl font-extrabold">{data.explanation2_1}</h1>
+                            <h1 className="text-3xl font-extrabold">{data.explanation2}</h1>
+                            <h1 className="text-lg font-extrabold">{data.explanation2_1}</h1>
                         </div>
                     </div>
                     <div className="exp3 flex flex-row mb-40">
@@ -51,9 +51,9 @@ export default function Preparation({ data }: { data: any }) {
                             </div>
                         </div>
                         <div className="right">
-                            <h1 className="text-4xl font-extrabold">{data.explanation3}</h1>
-                            <h1 className="text-4xl font-extrabold">{data.explanation3_0}</h1>
-                            <h1 className="text-xl font-extrabold">{data.explanation3_1}</h1>
+                            <h1 className="text-3xl font-extrabold">{data.explanation3}</h1>
+                            <h1 className="text-3xl font-extrabold">{data.explanation3_0}</h1>
+                            <h1 className="text-lg font-extrabold">{data.explanation3_1}</h1>
                         </div>
                     </div>
                 </div>
