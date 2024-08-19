@@ -9,8 +9,8 @@ import jsonData from "@/app/data/data.json";
 import ClientService from "@/components/client_service";
 
 export const metadata = {
-  title: 'title',
-  description: 'description'
+  title: '크랭이 - 빠른 크랭크인을 위한 프리프로덕션 협업툴',
+  description: '크랭이와 함께 캐스팅에 걸리는 시간을 줄여보아요'
 }
 
 export default function Home() {
