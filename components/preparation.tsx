@@ -2,7 +2,7 @@ export default function Preparation({ data }: { data: any }) {
     return (
         <div className="bg-gray-500 text-center h-screen w-full flex flex-col">
             <div className="title bg-slate-300 h-[30vh] flex flex-col">
-                <div className="title-top bg-blue-300 flex-1 flex flex-row items-center justify-center" style={{ flexBasis: '50%' }}>
+                <div className="title-top bg-gray-300 flex-1 flex flex-row items-center justify-center" style={{ flexBasis: '50%' }}>
                     <div className="w-[90px] h-[90px] bg-gray-300 border border-gray-400 flex items-center justify-center">
                         이미지
                     </div>
@@ -24,7 +24,7 @@ export default function Preparation({ data }: { data: any }) {
                     <div className="exp2 flex-1 bg-blue-200">
                         explanation2
                     </div>
-                    <div className="exp3 flex-1 bg-blue-400">
+                    <div className="exp3 flex-1 bg-brown-400">
                         explanation3
                     </div>
                 </div>
