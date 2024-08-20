@@ -1,6 +1,6 @@
 export default function Waitlist({ data }: { data: any }) {
     return (
-        <div className="bg-gray-400 text-center inline-block w-full py-[160px] flex flex-col items-center">
+        <div className="bg-gray-400 text-center inline-block w-full h-screen py-[160px] flex flex-col items-center">
             <div className="top mb-20">
                 <h1 className="text-3xl font-extrabold">{data.title1}</h1>
                 <h1 className="text-3xl font-extrabold">{data.title2}</h1>

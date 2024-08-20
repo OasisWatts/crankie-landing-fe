@@ -38,11 +38,14 @@
         "title": "크랭이는 이런 서비스를 준비하고 있습니다!",
         "explanation1": "프리프로덕션 협업 툴",
         "explanation1_1": "프리프로덕션 협업 툴 _에 대한 설명",
+        "image1" : "이미지1",
         "explanation2": "제작팀 소개 페이지",
         "explanation2_1": "제작팀 소개 페이지 _에 대한 설명",
+        "image2" : "이미지2",
         "explanation3": "IT기술을 활용한",
         "explanation3_0": "혁신적인 캐스팅 시간 단축",
-        "explanation3_1": "IT 기술을 활용한 혁신적인 캐스팅 _에 대한 설명"
+        "explanation3_1": "IT 기술을 활용한 혁신적인 캐스팅 _에 대한 설명",
+        "image3" : "이미지3"
     },
     "ClientService": {
         "title1_1": "크랭이는 프리프로덕션에서 있었던",
