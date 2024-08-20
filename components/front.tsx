@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Front({ data }: { data: { title1: string, title2: string } }) {
 
     return (
-        <div className="bg-[#2A2829] text-center w-full h-[1080px] py-[160px] flex flex-col items-center justify-center">
+        <div className="bg-[#2A2829] text-center w-full h-sceen py-[160px] flex flex-col items-center justify-center">
             <div className="justify-center">
                 <h1 className="text-5xl font-extrabold text-white">{data.title1}</h1>
                 <h1 className="text-5xl font-extrabold text-white">{data.title2}</h1>
