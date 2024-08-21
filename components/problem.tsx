@@ -18,10 +18,8 @@ export default function Problem({ data }: { data: { title1: string, title2: stri
                 </div>
             </div>
             <div className="bot flex-1 w-full flex flex-col items-center justify-center bg-white" style={{ flexBasis: '60%' }}>
-                <div className="img bg-[#2A2829] h-[1650px] w-[900px] flex-1 flex flex-col m-10 rounded-xl">
-                    <div className="img1 flex1 flex bg-white">
-                        
-                    </div>
+                <div className="img bg-[#2A2829] w-[500px] h-[300px] flex-1 flex flex-col m-10 rounded-xl">
+                    
                 </div>
             </div>
         </div>
