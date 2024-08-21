@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default function Problem({ data }: { data: { title1: string, title2: string, paragraph1: string, paragraph2: string } }) {
     return (
-        <div className="text-center w-full h-[120vh] flex flex-col items-center justify-center">
+        <div id="problem" className="text-center w-full h-[120vh] flex flex-col items-center justify-center">
             <div className="top flex-1 w-full flex flex-col bg-white" style={{ flexBasis: '40%' }}>
                 <div className="top flex-1 flex flex-col w-full items-center justify-end">
                     <Image src={img_tmp} alt="dsf" width={60} height={60} className='rounded-xl'/>
