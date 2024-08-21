@@ -77,61 +77,64 @@ export default function Preparation({ data }: { data: any }) {
                 {/* 설명란 */}
                 <div className="right flex-1 flex flex-col" style={{ flexBasis: '50%' }}>
                     {/* 설명1 */}
-                    <div className={`exp1 flex flex-row items-center justify-center flex-1 `}>
-                        <div className="bar h-full flex-1 flex flex-col items-end justify-center" style={{ flexBasis: "5%" }}>
+                    <div className={`exp1 flex flex-row items-center justify-center flex-1 `} style={{flexBasis: "30%"}}>
+                        <div className="bar h-full flex-1 flex flex-col items-end justify-center" style={{ flexBasis: "2%" }}>
                             <div className="pBar w-1 overflow-hidden rounded-md" style={{
                                 height: '100%', 
                                 background: `linear-gradient(to bottom, black ${currentExp === 1 ? progress : 0}%, transparent ${currentExp === 1 ? progress : 0}%)`,
-                                transition: 'background 0.1s linear'
+                                transition: 'background 0.1s linear',
+                                borderRadius: '0 0 50px 50px'
                             }}></div>
                         </div>
-                        <div className={`left h-full flex-1 flex items-center justify-center ${currentExp === 1 ? "bg-blue-500" : "bg-white"}`} style={{ flexBasis: "20%" }}>
+                        <div className={`left h-full flex-1 flex items-center justify-center`} style={{ flexBasis: "10%" }}>
                             <div className="w-[40px] h-[40px] flex items-center justify-center">
-                                <Image src={preparation_pic1} alt="dsf" width={40} height={40}/>
+                                <Image src={preparation_pic1} alt="dsf" width={40} height={40} className={`${currentExp === 1 ? "" : "opacity-15"}`}/>
                             </div>
                         </div>
-                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 1 ? "bg-blue-500" : "bg-white"}`} style={{ flexBasis: "75%" }}>
-                            <h1 className="text-3xl font-extrabold">{data.explanation1}</h1>
-                            <h1 className="text-lg font-extrabold">{data.explanation1_1}</h1>
+                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 1 ? "font-extrabold" : "font-extralight"}`} style={{ flexBasis: "88%" }}>
+                            <h1 className="text-2xl">{data.explanation1}</h1>
+                            <h1 className="text-md">{data.explanation1_1}</h1>
                         </div>
                     </div>
                     {/* 설명2 */}
-                    <div className={`exp2 flex flex-row items-center justify-center flex-1`}>
-                        <div className="bar h-full flex-1 flex flex-col items-end justify-center" style={{ flexBasis: "5%" }}>
+                    <div className={`exp2 flex flex-row items-center justify-center flex-1`} style={{flexBasis: "30%"}}>
+                        <div className="bar h-full flex-1 flex flex-col items-end justify-center" style={{ flexBasis: "2%" }}>
                             <div className="pBar w-1 overflow-hidden rounded-md" style={{
                                 height: '100%', 
                                 background: `linear-gradient(to bottom, black ${currentExp === 2 ? progress : 0}%, transparent ${currentExp === 2 ? progress : 0}%)`,
-                                transition: 'background 0.1s linear'
+                                transition: 'background 0.1s linear',
+                                borderRadius: '0 0 50px 50px'
                             }}></div>
                         </div>
-                        <div className={`left h-full flex-1 flex items-center justify-center ${currentExp === 2 ? "bg-blue-500" : "bg-white"}`} style={{ flexBasis: "20%" }}>
+                        <div className={`left h-full flex-1 flex items-center justify-center`} style={{ flexBasis: "10%" }}>
                             <div className="w-[40px] h-[40px] flex items-center justify-center">
-                                <Image src={preparation_pic2} alt="dsf" width={40} height={40}/>
+                                <Image src={preparation_pic2} alt="dsf" width={40} height={40} className={`${currentExp === 2 ? "" : "opacity-15"}`}/>
                             </div>
                         </div>
-                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 2 ? "bg-blue-500" : "bg-white"}`} style={{ flexBasis: "75%" }}>
-                            <h1 className="text-3xl font-extrabold">{data.explanation2}</h1>
-                            <h1 className="text-lg font-extrabold">{data.explanation2_1}</h1>
+                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 2 ? "font-extrabold" : "font-extralight"}`} style={{ flexBasis: "88%" }}>
+                            <h1 className="text-2xl">{data.explanation2}</h1>
+                            <h1 className="text-md">{data.explanation2_1}</h1>
                         </div>
                     </div>
                     {/* 설명3 */}
-                    <div className={`exp3 flex flex-row items-center justify-center flex-1`}>
-                        <div className="bar h-full flex-1 flex flex-col items-end justify-center" style={{ flexBasis: "5%" }}>
+                    <div className={`exp3 flex flex-row items-center justify-center flex-1`} style={{flexBasis: "40%"}}>
+                        <div className="bar h-full flex-1 flex flex-col items-end justify-center" style={{ flexBasis: "2%" }}>
                             <div className="pBar w-1 overflow-hidden rounded-md" style={{
                                 height: '100%', 
                                 background: `linear-gradient(to bottom, black ${currentExp === 3 ? progress : 0}%, transparent ${currentExp === 3 ? progress : 0}%)`,
-                                transition: 'background 0.1s linear'
+                                transition: 'background 0.1s linear',
+                                borderRadius: '0 0 50px 50px'
                             }}></div>
                         </div>
-                        <div className={`left h-full flex-1 flex items-center justify-center ${currentExp === 3 ? "bg-blue-500" : "bg-white"}`} style={{ flexBasis: "20%" }}>
+                        <div className={`left h-full flex-1 flex items-center justify-center`} style={{ flexBasis: "10%" }}>
                             <div className="w-[40px] h-[40px] flex items-center justify-center">
-                                <Image src={preparation_pic3} alt="dsf" width={40} height={40}/>
+                                <Image src={preparation_pic3} alt="dsf" width={40} height={40} className={`${currentExp === 3 ? "" : "opacity-15"}`}/>
                             </div>
                         </div>
-                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 3 ? "bg-blue-500" : "bg-white"}`} style={{ flexBasis: "75%" }}>
-                            <h1 className="text-3xl font-extrabold">{data.explanation3}</h1>
-                            <h1 className="text-3xl font-extrabold">{data.explanation3_0}</h1>
-                            <h1 className="text-lg font-extrabold">{data.explanation3_1}</h1>
+                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 3 ? "font-extrabold" : "font-extralight"}`} style={{ flexBasis: "88%" }}>
+                            <h1 className="text-2xl">{data.explanation3}</h1>
+                            <h1 className="text-2xl">{data.explanation3_0}</h1>
+                            <h1 className="text-md">{data.explanation3_1}</h1>
                         </div>
                     </div>
                 </div>
