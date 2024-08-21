@@ -3,21 +3,18 @@ import Image from "next/image"
 
 export default function FeatureTeamSpace({ data }: { data: any }) {
     return (
-        <div className="w-full h-screen bg-[#2A2829] flex flex-row justify-center items-center">
-            <div className="left h-full flex-1 flex flex-col items-end justify-center" style={{flexBasis: "50%"}}>
-                <div className="title flex flex-col items-end justify-center mr-10 text-white">
-                    <p className="text-5xl">여기 빨리 디자인 내놔</p>
+        <div className="w-full min-h-screen bg-[#2A2829] flex flex-col md:flex-row justify-center items-center p-4">
+            <div className="left flex-1 flex flex-col mr-10 items-end justify-end md:items-end text-white mb-10 md:mb-0" style={{ flexBasis: "50%" }}>
+                <div className="title text-center md:text-right">
                     <p className="text-xl font-bold">{data.title}</p>
                     <p className="mt-5">{data.explanation1}</p>
-                    <p className="">{data.explanation2}</p>
-                    <p className="mb-20">{data.explanation3}</p>
-                    <p className="text-2xl font-extrabold">{data.footer1}</p>
-                    <p className="text-2xl font-extrabold">{data.footer2}</p>
+                    <p>{data.explanation2}</p>
+                    <p className="mb-10 md:mb-20">{data.explanation3}</p>
                 </div>
             </div>
-            <div className="right h-full flex-1 flex flex-col items-start justify-center" style={{flexBasis: "50%"}}>
-                <div className="bg-gray-200 w-[550px] h-[400px] flex flex-col items-start justify-center ml-10">
-                    <Image src={gif3_tmp} alt="dsf" width={550} height={550}/>
+            <div className="right flex-1 flex flex-col items-center md:items-start justify-center" style={{ flexBasis: "50%" }}>
+                <div className="w-full max-w-[550px] h-auto bg-gray-200 rounded-lg overflow-hidden">
+                    <Image src={gif3_tmp} alt="Feature Image" width={550} height={400} className="w-full h-auto"/>
                 </div>
             </div>
         </div>
