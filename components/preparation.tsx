@@ -15,7 +15,7 @@ export default function Preparation({ data }: { data: any }) {
     const [currentExp, setCurrentExp] = useState(1); 
     const [progress, setProgress] = useState(0); // Progress 상태 추가
     const expCount = 3;
-    const intervalDuration = 2500; // 각 exp가 활성화되는 시간 (3초)
+    const intervalDuration = 3000; // 각 exp가 활성화되는 시간 (3초)
 
     const getImageForCurrentExp = () => {
         switch (currentExp) {
@@ -80,7 +80,7 @@ export default function Preparation({ data }: { data: any }) {
                     <div className={`exp1 flex flex-row items-center justify-center flex-1 `} style={{flexBasis: "30%"}}>
                         <div className="bar h-full flex-1 flex flex-col items-end justify-center" style={{ flexBasis: "2%" }}>
                             <div className="pBar w-1 overflow-hidden rounded-md" style={{
-                                height: '100%', 
+                                height: '50%', 
                                 background: `linear-gradient(to bottom, black ${currentExp === 1 ? progress : 0}%, transparent ${currentExp === 1 ? progress : 0}%)`,
                                 transition: 'background 0.1s linear',
                                 borderRadius: '0 0 50px 50px'
@@ -91,7 +91,7 @@ export default function Preparation({ data }: { data: any }) {
                                 <Image src={preparation_pic1} alt="dsf" width={40} height={40} className={`${currentExp === 1 ? "" : "opacity-15"}`}/>
                             </div>
                         </div>
-                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 1 ? "font-extrabold" : "font-extralight"}`} style={{ flexBasis: "88%" }}>
+                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 1 ? "font-extrabold" : "font-light"}`} style={{ flexBasis: "88%" }}>
                             <h1 className="text-2xl">{data.explanation1}</h1>
                             <h1 className="text-md">{data.explanation1_1}</h1>
                         </div>
@@ -100,7 +100,7 @@ export default function Preparation({ data }: { data: any }) {
                     <div className={`exp2 flex flex-row items-center justify-center flex-1`} style={{flexBasis: "30%"}}>
                         <div className="bar h-full flex-1 flex flex-col items-end justify-center" style={{ flexBasis: "2%" }}>
                             <div className="pBar w-1 overflow-hidden rounded-md" style={{
-                                height: '100%', 
+                                height: '50%', 
                                 background: `linear-gradient(to bottom, black ${currentExp === 2 ? progress : 0}%, transparent ${currentExp === 2 ? progress : 0}%)`,
                                 transition: 'background 0.1s linear',
                                 borderRadius: '0 0 50px 50px'
@@ -111,7 +111,7 @@ export default function Preparation({ data }: { data: any }) {
                                 <Image src={preparation_pic2} alt="dsf" width={40} height={40} className={`${currentExp === 2 ? "" : "opacity-15"}`}/>
                             </div>
                         </div>
-                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 2 ? "font-extrabold" : "font-extralight"}`} style={{ flexBasis: "88%" }}>
+                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 2 ? "font-extrabold" : "font-light"}`} style={{ flexBasis: "88%" }}>
                             <h1 className="text-2xl">{data.explanation2}</h1>
                             <h1 className="text-md">{data.explanation2_1}</h1>
                         </div>
@@ -120,7 +120,7 @@ export default function Preparation({ data }: { data: any }) {
                     <div className={`exp3 flex flex-row items-center justify-center flex-1`} style={{flexBasis: "40%"}}>
                         <div className="bar h-full flex-1 flex flex-col items-end justify-center" style={{ flexBasis: "2%" }}>
                             <div className="pBar w-1 overflow-hidden rounded-md" style={{
-                                height: '100%', 
+                                height: '50%', 
                                 background: `linear-gradient(to bottom, black ${currentExp === 3 ? progress : 0}%, transparent ${currentExp === 3 ? progress : 0}%)`,
                                 transition: 'background 0.1s linear',
                                 borderRadius: '0 0 50px 50px'
@@ -131,7 +131,7 @@ export default function Preparation({ data }: { data: any }) {
                                 <Image src={preparation_pic3} alt="dsf" width={40} height={40} className={`${currentExp === 3 ? "" : "opacity-15"}`}/>
                             </div>
                         </div>
-                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 3 ? "font-extrabold" : "font-extralight"}`} style={{ flexBasis: "88%" }}>
+                        <div className={`right h-full flex-1 flex flex-col items-start justify-center ${currentExp === 3 ? "font-extrabold" : "font-light"}`} style={{ flexBasis: "88%" }}>
                             <h1 className="text-2xl">{data.explanation3}</h1>
                             <h1 className="text-2xl">{data.explanation3_0}</h1>
                             <h1 className="text-md">{data.explanation3_1}</h1>
