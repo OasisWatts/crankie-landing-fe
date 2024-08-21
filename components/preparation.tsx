@@ -8,7 +8,6 @@ import preparation_pic1 from '@/img/preparation_pic1.jpg'
 import preparation_pic2 from '@/img/preparation_pic2.jpg'
 import preparation_pic3 from '@/img/preparation_pic3.jpg'
 import Image from "next/image"
-
 import { useState, useEffect } from "react";
 
 export default function Preparation({ data }: { data: any }) {
@@ -60,48 +59,48 @@ export default function Preparation({ data }: { data: any }) {
         <div className="bg-white text-center h-screen w-full flex flex-col">
             <div className="title h-[30vh] flex flex-col">
                 <div className="title-top flex-1 flex flex-row items-center justify-center" style={{ flexBasis: '50%' }}>
-                    <div className="w-[60px] h-[60px] flex items-center justify-cente mt-10">
-                        <Image src={check_img} alt="dsf" width={60} height={60}/>
+                    <div className="w-[60px] h-[60px] flex items-center justify-center mt-10">
+                        <Image src={check_img} alt="check" width={60} height={60}/>
                     </div>
                 </div>
                 <div className="title-bottom flex-1 flex flex-col items-center justify-center" style={{ flexBasis: '50%' }}>
                     <h1 className="text-4xl font-extrabold">{data.title}</h1>
                 </div>
             </div>
-            <div className="content bg-white h-[70vh] flex flex-row">
-                <div className="left flex-1 flex items-center justify-end" style={{ flexBasis: '50%' }}>
-                    <div className="image w-[400px] h-[400px] bg-white flex items-center justify-center mr-10">
+            <div className="content bg-white h-[70vh] flex flex-col md:flex-row">
+                <div className="left flex-1 flex items-center justify-center md:justify-end" style={{ flexBasis: '50%' }}>
+                    <div className="image w-[400px] h-[400px] bg-white flex items-center justify-center md:mr-10">
                         <Image src={getImageForCurrentExp()} alt={`Preparation Image ${currentExp}`} width={400} height={400}/>
                     </div>
                 </div>
                 {/* 설명란 */}
                 <div className="right flex-1 flex flex-col justify-center" style={{ flexBasis: '50%' }}>
-                    <div className="exp1 flex flex-row mb-10">
+                    <div className="exp1 flex flex-row mb-10 md:mb-0">
                         <div className="pBar w-1 overflow-hidden rounded-md mr-2" style={{
                                 height: '100%', 
                                 background: `linear-gradient(to bottom, #2237C6 ${currentExp === 1 ? progress : 0}%, transparent ${currentExp === 1 ? progress : 0}%)`,
                                 transition: 'background 0.1s linear',
                                 borderRadius: '0 0 50px 50px'
                             }}></div>
-                        <div className="picto mr-2">
-                            <Image src={preparation_pic1} alt="dsf" width={40} height={40} className={`${currentExp === 1 ? "" : "opacity-15"}`}/>
+                        <div className="picto mr-2 hidden md:block">
+                            <Image src={preparation_pic1} alt="pic1" width={40} height={40} className={`${currentExp === 1 ? "" : "opacity-15"}`}/>
                         </div>
-                        <div className={`exp  ${currentExp === 1 ? "font-extrabold" : "font-light"}`}>
+                        <div className={`exp ${currentExp === 1 ? "font-extrabold" : "font-light"}`}>
                             <h1 className="text-2xl">{data.explanation1}</h1>
                             <h1 className="text-md">{data.explanation1_1}</h1>
                         </div>
                     </div>
-                    <div className="exp2 flex flex-row">
+                    <div className="exp2 flex flex-row mb-10 md:mb-0">
                         <div className="pBar w-1 overflow-hidden rounded-md mr-2" style={{
                                 height: '100%', 
                                 background: `linear-gradient(to bottom, #2237C6 ${currentExp === 2 ? progress : 0}%, transparent ${currentExp === 2 ? progress : 0}%)`,
                                 transition: 'background 0.1s linear',
                                 borderRadius: '0 0 50px 50px'
                             }}></div>
-                        <div className="picto mr-2">
-                            <Image src={preparation_pic2} alt="dsf" width={40} height={40} className={`${currentExp === 2 ? "" : "opacity-15"}`}/>
+                        <div className="picto mr-2 hidden md:block">
+                            <Image src={preparation_pic2} alt="pic2" width={40} height={40} className={`${currentExp === 2 ? "" : "opacity-15"}`}/>
                         </div>
-                        <div className={`exp  ${currentExp === 2 ? "font-extrabold" : "font-light"}`}>
+                        <div className={`exp ${currentExp === 2 ? "font-extrabold" : "font-light"}`}>
                             <h1 className="text-2xl">{data.explanation2}</h1>
                             <h1 className="text-md">{data.explanation2_1}</h1>
                         </div>
@@ -113,8 +112,8 @@ export default function Preparation({ data }: { data: any }) {
                                 transition: 'background 0.1s linear',
                                 borderRadius: '0 0 50px 50px'
                             }}></div>
-                        <div className="picto mr-2">
-                            <Image src={preparation_pic3} alt="dsf" width={40} height={40} className={`${currentExp === 3 ? "" : "opacity-15"}`}/>
+                        <div className="picto mr-2 hidden md:block">
+                            <Image src={preparation_pic3} alt="pic3" width={40} height={40} className={`${currentExp === 3 ? "" : "opacity-15"}`}/>
                         </div>
                         <div className={`exp flex flex-col items-start ${currentExp === 3 ? "font-extrabold" : "font-light"}`}>
                             <h1 className="text-2xl">{data.explanation3}</h1>
