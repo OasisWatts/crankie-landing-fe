@@ -24,7 +24,7 @@ export default function Home() {
       <FeatureTeamSpace data={jsonData.FeatureTeamSpace} />
       <Preparation data={jsonData.Preparation} />
       <ClientService data={jsonData.ClientService} />
-      <Waitlist data={jsonData.Waitlist} />
+      <Waitlist data={jsonData.Waitlist} />s
     </div>
   )
 }
