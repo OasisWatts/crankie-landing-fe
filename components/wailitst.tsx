@@ -15,7 +15,7 @@ export default function Waitlist({ data }: { data: any }) {
 
     // 인스타그램 아이콘 클릭 시 새로운 탭에서 인스타그램 페이지를 열기
     const handleInstagramClick = () => {
-        window.open('https://www.instagram.com/your_instagram_account', '_blank');
+        window.open('https://www.instagram.com/crankie._/', '_blank');
     }
 
     return (

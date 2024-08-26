@@ -23,7 +23,7 @@ export default function ClientService({ data }: { data: any }) {
             {/* Button Section */}
             <div className="flex-1 flex flex-col w-full items-center justify-center">
                 <div className="flex flex-col items-center justify-end bg-[#5A95F5] p-4 rounded-lg">
-                    <Image unoptimized src={btn} alt="Feature 2 Image" width={329} height={84} className="w-full h-auto rounded-lg" onClick={handleImageClick} style={{ cursor: "pointer" }} />
+                    <Image src={btn} alt="Feature 2 Image" width={329} height={84} className="w-full h-auto rounded-lg" onClick={handleImageClick} style={{ cursor: "pointer" }} />
                 </div>
             </div>
         </div>

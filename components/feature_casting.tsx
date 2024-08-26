@@ -1,30 +1,30 @@
 import img_tmp from '@/img/check-img.svg'
-import gif1_tmp from '@/img/gif1.jpg'
-import gif2_tmp from '@/img/gif2.jpg'
+import gif1_tmp from '@/img/second_gif.gif'
+import gif2_tmp from '@/img/first_gif.gif'
 import Image from "next/image"
 
 export default function FeatureCasting({ data }: { data: any }) {
     return (
-        <div className="w-full min-h-screen flex flex-col justify-center items-center bg-white">
-            <div className="top w-full flex flex-col items-center justify-center p-4 mt-10" style={{ flexBasis: "20%" }}>
+        <div className="w-full min-h-screen flex flex-col justify-center items-center bg-white p-10">
+            <div className="top w-full flex flex-col items-center justify-center p-4 mt-10 mb-10" style={{ flexBasis: "20%" }}>
                 <div className="img w-[60px] h-[60px] flex items-center justify-center mt-10">
                     <Image unoptimized src={img_tmp} alt="check icon" width={50} height={50} className='rounded-sm' />
                 </div>
                 <div className="title text-3xl md:text-4xl lg:text-5xl font-extrabold mt-5 mb-5 text-center">
                     {data.title}
                 </div>
-                <div className="subtitle text-gray-400">
+                <div className="subtitle text-sm sm:text-base lg:text-lg font-bold text-gray-400">
                     크랭이는 앞으로도, 드라마/영화 제작팀에 필요한
                 </div>
-                <div className="subtitle text-gray-400">
+                <div className="subtitle text-sm sm:text-base lg:text-lg font-bold text-gray-400">
                     다양한 서비스를 준비하고 있습니다.
                 </div>
             </div>
             <div className="bot w-full flex-1 flex flex-col items-center justify-center p-4 mt-10" style={{ flexBasis: "80%" }}>
                 <div className="firstBlock w-full flex flex-col md:flex-row items-center justify-center mb-10 " style={{ flexBasis: "50%" }}>
-                    <div className="left flex-1 flex items-center justify-center md:justify-end mb-6 md:mb-0">
+                    <div className="left flex-1 flex items-center justify-center md:justify-end mb-6 md:mb-0 ml-1">
                         <div className="rounded">
-                            <Image unoptimized src={gif1_tmp} alt="Feature 1 Image" width={713} height={538} className="w-full h-auto" />
+                            <Image unoptimized src={gif1_tmp} alt="Feature 1 Image" width={600} height={538} className="w-full h-auto rounded-sm" />
                         </div>
                     </div>
                     <div className="right flex-1 flex flex-col items-center md:items-start justify-center text-center md:text-left ml-10">
@@ -43,10 +43,10 @@ export default function FeatureCasting({ data }: { data: any }) {
                         <div className="f1 text-gray-400">손 쉽게 확인할 수 있어요.</div>
                     </div>
                 </div>
-                <div className="secondBlock w-full flex flex-col md:flex-row-reverse items-center justify-center" style={{ flexBasis: "50%" }}>
+                <div className="secondBlock w-full flex flex-col md:flex-row-reverse items-center justify-center mb-20" style={{ flexBasis: "50%" }}>
                     <div className="left flex-1 flex items-center justify-center md:justify-start mb-6 md:mb-0">
                         <div className="rounded">
-                            <Image unoptimized src={gif2_tmp} alt="Feature 2 Image" width={713} height={538} className="w-full h-auto" />
+                            <Image unoptimized src={gif2_tmp} alt="Feature 2 Image" width={713} height={538} className="w-full h-auto rounded-sm" />
                         </div>
                     </div>
                     <div className="right flex-1 flex flex-col items-center md:items-end justify-center text-center md:text-right mr-10">

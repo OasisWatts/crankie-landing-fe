@@ -32,6 +32,12 @@ export default function Preparation({ data }: { data: any }) {
         }
     };
 
+    const resetCurrentExp = (ClickedExp : number) => {
+        setProgress(0);
+        setCurrentExp(ClickedExp);
+    }
+    
+
     useEffect(() => {
         // progress 바가 부드럽게 채워지도록 하는 효과
         const progressInterval = setInterval(() => {
@@ -60,14 +66,14 @@ export default function Preparation({ data }: { data: any }) {
 
     return (
         <div className="bg-white text-center h-[120vh] w-full flex flex-col">
-            <div className="title h-[30vh] flex flex-col mt-10">
+            <div className="title h-[30vh] flex flex-col mt-10 mb-10">
                 <div className="title-top flex-1 flex flex-row items-center justify-center" style={{ flexBasis: '50%' }}>
                     <div className="w-[60px] h-[60px] flex items-center justify-center mt-10">
                         <Image unoptimized src={check_img} alt="check icon" width={50} height={50} className='rounded-sm' />
                     </div>
                 </div>
                 <div className="title-bottom flex-1 flex flex-col items-center justify-center" style={{ flexBasis: '50%' }}>
-                    <h1 className="text-4xl font-extrabold">{data.title}</h1>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold">{data.title}</h1>
                 </div>
             </div>
             <div className="content bg-white h-[70vh] flex flex-col md:flex-row mt-10">
@@ -78,7 +84,22 @@ export default function Preparation({ data }: { data: any }) {
                 </div>
                 {/* 설명란 */}
                 <div className="right flex-1 flex flex-col justify-center mb-10 mt-10" style={{ flexBasis: '50%' }}>
-                    <div className="exp1 flex flex-row mb-10">
+                    <div className="exp1 flex flex-row mb-20">
+                        <div className="pBar w-1 overflow-hidden rounded-md mr-2" style={{
+                            height: '100%',
+                            background: `linear-gradient(to bottom, #2237C6 ${currentExp === 3 ? progress : 0}%, transparent ${currentExp === 3 ? progress : 0}%)`,
+                            transition: 'background 0.1s linear',
+                            borderRadius: '0 0 50px 50px'
+                        }}></div>
+                        <div className="flex-1 w-[450px] h-[80px] items-center justify-start rounded-sm" onClick={() => {resetCurrentExp(3)}} style={{ cursor: "pointer" }}>
+                            {
+                                currentExp === 3 ?
+                                    (<Image unoptimized src={it_color_img} alt='exp1' width={450} height={80} />) :
+                                    (<Image unoptimized src={it_img} alt='exp1' width={450} height={80} />)
+                            }
+                        </div>
+                    </div>
+                    <div className="exp1 flex flex-row mb-20">
                         <div className="pBar w-1 overflow-hidden rounded-xl mr-2" style={{
                             height: '100%',
                             background: `linear-gradient(to bottom, #2237C6 ${currentExp === 1 ? progress : 0}%, transparent ${currentExp === 1 ? progress : 0}%)`,
@@ -86,42 +107,27 @@ export default function Preparation({ data }: { data: any }) {
                             borderRadius: '0 0 50px 50px'
                         }}></div>
 
-                        <div className="flex-1 w-[544px] h-[148px] items-center justify-start rounded-sm">
+                        <div className="flex-1 w-[450px] h-[80px] items-center justify-start rounded-sm" onClick={() => {resetCurrentExp(1)}} style={{ cursor: "pointer" }}>
                             {
                                 currentExp === 1 ?
-                                    (<Image unoptimized src={preproduction_color_img} alt='exp1' width={544} height={148} />) :
-                                    (<Image unoptimized src={preproduction_img} alt='exp1' width={544} height={148} />)
+                                    (<Image unoptimized src={preproduction_color_img} alt='exp1' width={450} height={80} />) :
+                                    (<Image unoptimized src={preproduction_img} alt='exp1' width={450} height={80} />)
                             }
                         </div>
 
                     </div>
-                    <div className="exp1 flex flex-row mb-10">
+                    <div className="exp1 flex flex-row mb-20">
                         <div className="pBar w-1 overflow-hidden rounded-md mr-2" style={{
                             height: '100%',
                             background: `linear-gradient(to bottom, #2237C6 ${currentExp === 2 ? progress : 0}%, transparent ${currentExp === 2 ? progress : 0}%)`,
                             transition: 'background 0.1s linear',
                             borderRadius: '0 0 50px 50px'
                         }}></div>
-                        <div className="flex-1 w-[544px] h-[148px] items-center justify-start rounded-sm">
+                        <div className="flex-1 w-[450px] h-[80px] items-center justify-start rounded-sm" onClick={() => {resetCurrentExp(2)}} style={{ cursor: "pointer" }}>
                             {
                                 currentExp === 2 ?
-                                    (<Image unoptimized src={intro_color_img} alt='exp1' width={544} height={148} />) :
-                                    (<Image unoptimized src={intro_img} alt='exp1' width={544} height={148} />)
-                            }
-                        </div>
-                    </div>
-                    <div className="exp1 flex flex-row mb-10">
-                        <div className="pBar w-1 overflow-hidden rounded-md mr-2" style={{
-                            height: '100%',
-                            background: `linear-gradient(to bottom, #2237C6 ${currentExp === 3 ? progress : 0}%, transparent ${currentExp === 3 ? progress : 0}%)`,
-                            transition: 'background 0.1s linear',
-                            borderRadius: '0 0 50px 50px'
-                        }}></div>
-                        <div className="flex-1 w-[544px] h-[148px] items-center justify-start rounded-sm">
-                            {
-                                currentExp === 3 ?
-                                    (<Image unoptimized src={it_color_img} alt='exp1' width={544} height={148} />) :
-                                    (<Image unoptimized src={it_img} alt='exp1' width={544} height={148} />)
+                                    (<Image unoptimized src={intro_color_img} alt='exp1' width={450} height={80} />) :
+                                    (<Image unoptimized src={intro_img} alt='exp1' width={450} height={80} />)
                             }
                         </div>
                     </div>
