@@ -22,7 +22,7 @@ export default function Waitlist({ data }: { data: any }) {
         <div className="bg-[#D1E8FF] text-center w-full h-screen flex flex-col items-center justify-center p-4">
             {/* 상단 텍스트 부분 */}
             <div className="top w-full flex-1 flex flex-col items-center justify-end p-4 ml-10">
-                <h1 className="text-5xl font-extrabold">사전 등록하고,</h1>
+                <h1 className="text-5xl font-extrabol">사전 등록하고,</h1>
                 <h1 className="text-5xl font-extrabold">크랭이의 소식을 빠르게 만나보세요</h1>
             </div>
 
