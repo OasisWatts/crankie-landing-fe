@@ -16,16 +16,16 @@ export default function Solution({ data }: { data: { title1: string, title2: str
                 </div>
                 <div className="content text-start ">
                     <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.explanation1}
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.explanation1}
                     </h1>
                     <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mt-2">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.explanation2}
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{data.explanation2}
                     </h1>
                 </div>
             </div>
             <div className="right flex-1 h-full flex flex-col justify-center items-start" style={{ flexBasis: "50%" }}>
                 <div className="img flex justify-center items-start bg-gray-200 rounded-xl overflow-hidden">
-                    <Image src={img_tmp} alt="Solution Image" width={622} height={473} className="w-full h-auto" />
+                    <Image unoptimized src={img_tmp} alt="Solution Image" width={622} height={473} className="w-full h-auto" />
                 </div>
             </div>
         </div>

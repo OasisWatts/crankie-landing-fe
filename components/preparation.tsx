@@ -14,7 +14,7 @@ import Image from "next/image"
 import { useState, useEffect } from "react";
 
 export default function Preparation({ data }: { data: any }) {
-    const [currentExp, setCurrentExp] = useState(1); 
+    const [currentExp, setCurrentExp] = useState(1);
     const [progress, setProgress] = useState(0); // Progress 상태 추가
     const expCount = 3;
     const intervalDuration = 3000; // 각 exp가 활성화되는 시간 (3초)
@@ -63,7 +63,7 @@ export default function Preparation({ data }: { data: any }) {
             <div className="title h-[30vh] flex flex-col mt-10">
                 <div className="title-top flex-1 flex flex-row items-center justify-center" style={{ flexBasis: '50%' }}>
                     <div className="w-[60px] h-[60px] flex items-center justify-center mt-10">
-                        <Image src={check_img} alt="check icon" width={50} height={50} className='rounded-sm' />
+                        <Image unoptimized src={check_img} alt="check icon" width={50} height={50} className='rounded-sm' />
                     </div>
                 </div>
                 <div className="title-bottom flex-1 flex flex-col items-center justify-center" style={{ flexBasis: '50%' }}>
@@ -73,55 +73,55 @@ export default function Preparation({ data }: { data: any }) {
             <div className="content bg-white h-[70vh] flex flex-col md:flex-row mt-10">
                 <div className="left flex-1 flex items-center justify-center md:justify-end" style={{ flexBasis: '50%' }}>
                     <div className="image w-[400px] h-[400px] bg-white flex items-center justify-center md:mr-10">
-                        <Image src={getImageForCurrentExp()} alt={`Preparation Image ${currentExp}`} width={638} height={526}/>
+                        <Image unoptimized src={getImageForCurrentExp()} alt={`Preparation Image ${currentExp}`} width={638} height={526} />
                     </div>
                 </div>
                 {/* 설명란 */}
                 <div className="right flex-1 flex flex-col justify-center mb-10 mt-10" style={{ flexBasis: '50%' }}>
                     <div className="exp1 flex flex-row mb-10">
                         <div className="pBar w-1 overflow-hidden rounded-xl mr-2" style={{
-                                height: '100%', 
-                                background: `linear-gradient(to bottom, #2237C6 ${currentExp === 1 ? progress : 0}%, transparent ${currentExp === 1 ? progress : 0}%)`,
-                                transition: 'background 0.1s linear',
-                                borderRadius: '0 0 50px 50px'
-                            }}></div>
+                            height: '100%',
+                            background: `linear-gradient(to bottom, #2237C6 ${currentExp === 1 ? progress : 0}%, transparent ${currentExp === 1 ? progress : 0}%)`,
+                            transition: 'background 0.1s linear',
+                            borderRadius: '0 0 50px 50px'
+                        }}></div>
 
                         <div className="flex-1 w-[544px] h-[148px] items-center justify-start rounded-sm">
                             {
                                 currentExp === 1 ?
-                                (<Image src={preproduction_color_img} alt='exp1' width={544} height={148}/>) :
-                                (<Image src={preproduction_img} alt='exp1' width={544} height={148}/>)
+                                    (<Image unoptimized src={preproduction_color_img} alt='exp1' width={544} height={148} />) :
+                                    (<Image unoptimized src={preproduction_img} alt='exp1' width={544} height={148} />)
                             }
                         </div>
-    
+
                     </div>
                     <div className="exp1 flex flex-row mb-10">
                         <div className="pBar w-1 overflow-hidden rounded-md mr-2" style={{
-                                height: '100%', 
-                                background: `linear-gradient(to bottom, #2237C6 ${currentExp === 2 ? progress : 0}%, transparent ${currentExp === 2 ? progress : 0}%)`,
-                                transition: 'background 0.1s linear',
-                                borderRadius: '0 0 50px 50px'
-                            }}></div>
+                            height: '100%',
+                            background: `linear-gradient(to bottom, #2237C6 ${currentExp === 2 ? progress : 0}%, transparent ${currentExp === 2 ? progress : 0}%)`,
+                            transition: 'background 0.1s linear',
+                            borderRadius: '0 0 50px 50px'
+                        }}></div>
                         <div className="flex-1 w-[544px] h-[148px] items-center justify-start rounded-sm">
                             {
                                 currentExp === 2 ?
-                                (<Image src={intro_color_img} alt='exp1' width={544} height={148}/>) :
-                                (<Image src={intro_img} alt='exp1' width={544} height={148}/>)
+                                    (<Image unoptimized src={intro_color_img} alt='exp1' width={544} height={148} />) :
+                                    (<Image unoptimized src={intro_img} alt='exp1' width={544} height={148} />)
                             }
                         </div>
                     </div>
                     <div className="exp1 flex flex-row mb-10">
                         <div className="pBar w-1 overflow-hidden rounded-md mr-2" style={{
-                                height: '100%', 
-                                background: `linear-gradient(to bottom, #2237C6 ${currentExp === 3 ? progress : 0}%, transparent ${currentExp === 3 ? progress : 0}%)`,
-                                transition: 'background 0.1s linear',
-                                borderRadius: '0 0 50px 50px'
-                            }}></div>
+                            height: '100%',
+                            background: `linear-gradient(to bottom, #2237C6 ${currentExp === 3 ? progress : 0}%, transparent ${currentExp === 3 ? progress : 0}%)`,
+                            transition: 'background 0.1s linear',
+                            borderRadius: '0 0 50px 50px'
+                        }}></div>
                         <div className="flex-1 w-[544px] h-[148px] items-center justify-start rounded-sm">
                             {
                                 currentExp === 3 ?
-                                (<Image src={it_color_img} alt='exp1' width={544} height={148}/>) :
-                                (<Image src={it_img} alt='exp1' width={544} height={148}/>)
+                                    (<Image unoptimized src={it_color_img} alt='exp1' width={544} height={148} />) :
+                                    (<Image unoptimized src={it_img} alt='exp1' width={544} height={148} />)
                             }
                         </div>
                     </div>

@@ -5,6 +5,7 @@
   "homepage": "https://oasiswatts.github.io/crankie-landing-fe/",
   "scripts": {
     "dev": "next dev",
+    "deploy-test": "next build && npx serve@latest out",
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",

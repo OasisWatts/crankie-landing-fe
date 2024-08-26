@@ -14,7 +14,7 @@ export default function FeatureTeamSpace({ data }: { data: any }) {
             </div>
             <div className="right flex-1 flex flex-col items-center md:items-start justify-center" style={{ flexBasis: "60%" }}>
                 <div className="w-full bg-gray-200 rounded-lg overflow-hidden">
-                    <Image src={gif3_tmp} alt="Feature Image" width={708} height={604}/>
+                    <Image unoptimized src={gif3_tmp} alt="Feature Image" width={708} height={604} />
                 </div>
             </div>
         </div>

@@ -28,8 +28,8 @@ export default function Waitlist({ data }: { data: any }) {
 
             {/* 하단 이미지 및 인스타그램 아이콘 부분 */}
             <div className="bot w-full flex-1 flex flex-row items-center justify-center">
-                <Image src={register_btn} alt="waitlist image" width={240} height={70} className='rounded-sm mr-5' onClick={handleRegisterClick} style={{cursor: "pointer"}}/>
-                <Image src={insta_img} alt="waitlist image" width={240} height={70} className='rounded-sm' onClick={handleInstagramClick} style={{cursor: "pointer"}}/>
+                <Image unoptimized src={register_btn} alt="waitlist image" width={240} height={70} className='rounded-sm mr-5' onClick={handleRegisterClick} style={{ cursor: "pointer" }} />
+                <Image unoptimized src={insta_img} alt="waitlist image" width={240} height={70} className='rounded-sm' onClick={handleInstagramClick} style={{ cursor: "pointer" }} />
             </div>
         </div>
     )
