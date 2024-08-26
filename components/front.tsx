@@ -1,6 +1,6 @@
 'use client'
 
-import img_tmp from "@/img/front-logo.jpg";
+import img_tmp from "@/img/front-logo.svg";
 import Image from "next/image";
 
 export default function Front({ data }: { data: { title1: string, title2: string } }) {
@@ -12,22 +12,23 @@ export default function Front({ data }: { data: { title1: string, title2: string
     };
 
     return (
-        <div className="front text-center w-full h-screen flex flex-col items-center justify-center bg-[#2A2829] p-4">
+        <div className="front text-center w-full h-screen flex flex-col items-center justify-center bg-[#2881DD] p-4">
             <div 
-                className="top flex flex-col w-full items-center justify-center"
+                className="top flex flex-col w-full items-center justify-center mt-5"
                 style={{ flexBasis: '50%' }}
             >
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
                     {data.title1}
                 </h1>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">
                     {data.title2}
                 </h1>
+                <h1 className="text-xs sm:text-sm md:text-base font-extrabold text-white">
+                    크랭이에 대한 간단한 설명이 있는 자리입니다
+                </h1>
             </div>
             <div 
-                className="bot w-full flex flex-col items-center justify-start mt-8"
-                style={{ flexBasis: '50%' }}
-            >
+                className="bot flex flex-col items-center justify-start mt-8 mb-10 bg-white rounded-sm">
                 <Image 
                     src={img_tmp} 
                     alt="front logo" 
