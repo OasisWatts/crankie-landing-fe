@@ -21,7 +21,7 @@ export default function Home() {
       <Problem data={jsonData.Problem} />
       <Solution data={jsonData.Solution} />
       <FeatureCasting data={jsonData.FeatureCasting} />
-      <FeatureTeamSpace data={jsonData.FeatureTeamSpace} />
+      {/* <FeatureTeamSpace data={jsonData.FeatureTeamSpace} /> */}
       <Preparation data={jsonData.Preparation} />
       <ClientService data={jsonData.ClientService} />
       <Waitlist data={jsonData.Waitlist} />

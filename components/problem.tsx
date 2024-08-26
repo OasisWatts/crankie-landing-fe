@@ -16,13 +16,13 @@ export default function Problem({ data }: { data: { title1: string, title2: stri
                         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold">&nbsp;배우님들의 지원 메일</h1>
                     </div>
                 </div>
-                <div className="bot flex-1 flex flex-col items-center justify-start">
+                <div className="bot flex-1 flex flex-col items-center justify-start text-slate-400 mt-5">
                     <p className="text-sm sm:text-base lg:text-lg font-bold">{data.paragraph1}</p>
                     <p className="text-sm sm:text-base lg:text-lg font-bold">{data.paragraph2}</p>
                 </div>
             </div>
             <div className="bot flex-1 w-full flex flex-col items-center mb-10 justify-center bg-white p-4 sm:p-6 lg:p-8" style={{ flexBasis: '60%' }}>
-                <Image unoptimized src={problem_img} alt="problem pic" width={1426} height={795} className='rounded-xl' />
+                <Image unoptimized src={problem_img} alt="problem pic" width={1000} height={500} className='rounded-xl' />
             </div>
         </div>
     );

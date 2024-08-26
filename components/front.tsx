@@ -23,8 +23,8 @@ export default function Front({ data }: { data: { title1: string, title2: string
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">
                     {data.title2}
                 </h1>
-                <h1 className="text-xs sm:text-sm md:text-base font-extrabold text-white">
-                    크랭이에 대한 간단한 설명이 있는 자리입니다
+                <h1 className="text-xs sm:text-sm md:text-base font-extrabold text-[#A5CDF7]">
+                    빠른 프리프로덕션 - 크랭이
                 </h1>
             </div>
             <div
