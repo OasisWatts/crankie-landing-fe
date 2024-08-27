@@ -3,7 +3,7 @@
 import check_img from '@/img/check-img.svg'
 import preparation_img1 from '@/img/preparation_img1.svg'
 import preparation_img2 from '@/img/preparation_img2.svg'
-import preparation_img3 from '@/img/preparation_img2.svg'
+import preparation_img3 from '@/img/preparation_img3.svg'
 import preproduction_img from '@/img/preproduction_img.svg'
 import preproduction_color_img from '@/img/preproduction_color_img.svg'
 import intro_color_img from '@/img/intro_color_img.svg'
@@ -65,7 +65,7 @@ export default function Preparation({ data }: { data: any }) {
     }, []);
 
     return (
-        <div className="bg-white text-center h-[120vh] w-full flex flex-col">
+        <div className="bg-white text-center h-[120vh] w-full flex flex-col hidden sm:block">
             <div className="title h-[30vh] flex flex-col mt-10 mb-5">
                 <div className="title-top flex-1 flex flex-col items-center justify-center mt-10">
                     <div className="w-[60px] h-[60px] flex items-center justify-center">
