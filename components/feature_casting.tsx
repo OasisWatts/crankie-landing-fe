@@ -1,5 +1,5 @@
 import img_tmp from '@/img/check-img.svg';
-import gif1_tmp from '@/img/second_gif.gif';
+import gif1_tmp from '@/img/second_gif-min.gif';
 import gif2_tmp from '@/img/first_gif.gif';
 import Image from 'next/image';
 
