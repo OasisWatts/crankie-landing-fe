@@ -65,7 +65,7 @@ export default function Preparation({ data }: { data: any }) {
     }, []);
 
     return (
-        <div className="bg-white text-center h-[120vh] w-full flex flex-col hidden sm:block md:block">
+        <div className="bg-white text-center h-[120vh] w-full flex flex-col hidden sm:block md:block whitespace-nowrap">
             <div className="title h-[30vh] flex flex-col mt-10 mb-5">
                 <div className="title-top flex-1 flex flex-col items-center justify-center mt-10">
                     <div className="w-[60px] h-[60px] flex items-center justify-center">
