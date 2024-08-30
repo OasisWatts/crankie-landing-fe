@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function FeatureCasting({ data }: { data: any }) {
   return (
-    <div className="w-full min-h-screen flex flex-col justify-center items-center bg-white p-10">
+    <div className="w-full min-h-screen flex flex-col justify-center items-center bg-white p-10 whitespace-nowrap">
       <div
         className="top w-full flex flex-col items-center justify-center p-4 mt-10 mb-10"
         style={{ flexBasis: '20%' }}
@@ -16,10 +16,10 @@ export default function FeatureCasting({ data }: { data: any }) {
         <div className="title text-3xl md:text-4xl lg:text-5xl font-extrabold mt-5 mb-5 text-center">
           {data.title}
         </div>
-        <div className="subtitle text-sm sm:text-base lg:text-lg font-bold text-gray-400 text-center">
+        <div className="subtitle font-bold text-sm sm:text-base lg:text-lg font-bold text-gray-400 text-center">
           크랭이는 앞으로도, 드라마/영화 제작팀에 필요한
         </div>
-        <div className="subtitle text-sm sm:text-base lg:text-lg font-bold text-gray-400 text-center">
+        <div className="subtitle font-bold text-sm sm:text-base lg:text-lg font-bold text-gray-400 text-center">
           다양한 서비스를 준비하고 있습니다.
         </div>
       </div>
@@ -51,8 +51,8 @@ export default function FeatureCasting({ data }: { data: any }) {
               </div>
               <h1 className="text-2xl">{data.feature1_2}</h1>
             </div>
-            <div className="f1 text-gray-400 text-center md:text-left">쇼츠, 릴스 형식으로</div>
-            <div className="f1 text-gray-400 text-center md:text-left">손 쉽게 확인할 수 있어요.</div>
+            <div className="f1 font-bold text-sm sm:text-base lg:text-lg text-gray-400 text-center md:text-left">쇼츠, 릴스 형식으로</div>
+            <div className="f1 font-bold text-sm sm:text-base lg:text-lg text-gray-400 text-center md:text-left">손 쉽게 확인할 수 있어요.</div>
           </div>
         </div>
         <div
@@ -80,8 +80,8 @@ export default function FeatureCasting({ data }: { data: any }) {
               </div>
             </div>
             <div className="exp">
-              <div className="f1 text-gray-400 text-center md:text-right">모든 출연작을 한눈에,</div>
-              <div className="f1 text-gray-400 text-center md:text-right">영상을 한 번에 확인하세요.</div>
+              <div className="f1 font-bold text-sm sm:text-base lg:text-lg text-gray-400 text-center md:text-right">모든 출연작을 한눈에,</div>
+              <div className="f1 font-bold text-sm sm:text-base lg:text-lg text-gray-400 text-center md:text-right">영상을 한 번에 확인하세요.</div>
             </div>
           </div>
         </div>
