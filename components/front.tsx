@@ -12,7 +12,7 @@ export default function Front({ data }: { data: { title1: string, title2: string
     };
 
     return (
-        <div className="front text-center w-full h-screen flex flex-col items-center justify-center bg-[#2881DD] p-10">
+        <div className="front text-center w-full h-screen flex flex-col items-center justify-center bg-[#2881DD] p-10 whitespace-nowrap">
             <div
                 className="top flex flex-col w-full items-center justify-center mt-5"
                 style={{ flexBasis: '50%' }}
