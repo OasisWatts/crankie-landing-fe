@@ -17,10 +17,10 @@ export default function Front({ data }: { data: { title1: string, title2: string
                 className="top flex flex-col w-full items-center justify-center mt-5"
                 style={{ flexBasis: '50%' }}
             >
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
+                <h1 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-white">
                     {data.title1}
                 </h1>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">
+                <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white">
                     {data.title2}
                 </h1>
                 <h1 className="text-xs sm:text-sm md:text-base font-extrabold text-[#A5CDF7]">
