@@ -1,0 +1,26 @@
+.header {
+  background-color: #2881DD
+  ;
+  color: #ffff;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  /* align-items: center; */
+  padding: 1rem;
+  height: 65px;
+  /* transition: background-color 0.3s ease; */
+}
+
+.bar {
+  color: #2881DD;
+  position: fixed;
+  display: flex;
+  
+  justify-content: center;
+  /* top: 0;
+  left: 0;
+  right: 0; */
+  background-color: #ffff;
+  /* box-shadow: 0 4px 2px -2px #; */
+  z-index: 100;
+}

@@ -7,6 +7,8 @@ import Solution from "@/components/solution";
 import Waitlist from "@/components/wailitst";
 import jsonData from "@/app/data/data.json";
 import ClientService from "@/components/client_service";
+import Kimminwoo from "@/components/kimminwoo";
+import Bar from "@/components/bar";
 
 export const metadata = {
   title: '크랭이 - 빠른 크랭크인을 위한 프리프로덕션 협업툴',
@@ -17,6 +19,7 @@ export default function Home() {
 
   return (
     <div>
+      <Bar data={jsonData.Bar} />
       <Front data={jsonData.Front} />
       <Problem data={jsonData.Problem} />
       <Solution data={jsonData.Solution} />
@@ -25,6 +28,7 @@ export default function Home() {
       <Preparation data={jsonData.Preparation} />
       <ClientService data={jsonData.ClientService} />
       <Waitlist data={jsonData.Waitlist} />
+      <Kimminwoo data={jsonData.Kimminwoo} />
     </div>
   )
 }

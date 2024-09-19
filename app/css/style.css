@@ -13,7 +13,7 @@
 @import 'additional-styles/hightlights.css';
 @import 'additional-styles/scroll-effect.css';
 @import 'tailwindcss/utilities';
-
+@import 'additional-styles/bar.css';
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 @layer utilities {
     .rtl {

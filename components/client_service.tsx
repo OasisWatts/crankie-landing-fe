@@ -11,7 +11,7 @@ export default function ClientService({ data }: { data: any }) {
     }
 
     return (
-        <div className="bg-[#5A95F5] text-center h-screen w-full flex flex-col items-center justify-center p-5">
+        <div className="bg-[#2881DD] text-center h-screen w-full flex flex-col items-center justify-center p-5">
             {/* Top Section: Contains titles */}
             <div className="flex-1 flex flex-col w-full items-center justify-end text-white mt-10 md:mt-20">
                 {/* Adjust text sizes for different screen sizes */}
@@ -23,7 +23,7 @@ export default function ClientService({ data }: { data: any }) {
             {/* Button Section */}
             <div className="flex-1 flex flex-col w-full items-center justify-start mt-5 md:mt-10">
                 {/* Adjust padding and margins for mobile view */}
-                <div className="flex flex-col items-center justify-center bg-[#5A95F5] p-2 md:p-4 rounded-lg">
+                <div className="flex flex-col items-center justify-center bg-[#2881DD] p-2 md:p-4 rounded-lg">
                     {/* Ensure the image is responsive */}
                     <Image 
                         src={btn} 
